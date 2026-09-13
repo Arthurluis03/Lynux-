@@ -1,22 +1,34 @@
-const ID_CARGO_ROYAL = "1548443135980474439";
+import { temPermissao } from "./permissoes.js";
+
+const ID_CARGO_ROYAL = "1544850668429246575";
 
 export default {
     name: "setRoyal",
 
     async execute(message) {
 
+        if (!temPermissao(message)) {
+            return message.reply(
+                "Você não tem permissão pra isso."
+            );
+        }
+
         const membro = message.mentions.members.first();
 
         if (!membro) {
-            return message.reply("Você precisa mencionar alguém.");
+            return message.reply(
+                "Você precisa mencionar alguém."
+            );
         }
 
-        const cargo = message.guild.roles.cache.get(
+        const cargo = await message.guild.roles.fetch(
             ID_CARGO_ROYAL
-        );
+        ).catch(() => null);
 
         if (!cargo) {
-            return message.reply("Não encontrei o cargo Royal.");
+            return message.reply(
+                "Não encontrei o cargo Royal neste servidor."
+            );
         }
 
         try {

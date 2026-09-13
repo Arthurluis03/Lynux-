@@ -160,7 +160,7 @@ export default (client) => {
       setRoyal.execute(message);
     }
 
-    if (message.content.startsWith("!setPartner ")) {
+    if (message.content.startsWith("!setPartner")) {
       setPartner.execute(message);
     }
 

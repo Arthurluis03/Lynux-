@@ -1,25 +1,23 @@
-const Cargos_Permitidos = [
+const CARGOS_PERMITIDOS = [
     process.env.CARGO_OWNER,
     process.env.CARGO_7NEVER,
     process.env.CARGO_SUB_OWNER,
     process.env.CARGO_GOAT_ADM,
-
-    // Adicionar novos cargos permitidos aqui depois
+    process.env.CARGO_SUP
 ];
 
-const IDs_Permitidos = [
-    process.env.BATATA_CREATE,
+const ID_POTATO = process.env.BATATA_CREATE;
 
-    // Adicionar novos IDs permitidos aqui depois
-];
+export function temPermissao(message) {
 
-export function Permissao_Verificar(message) {
-
-    if (IDs_Permitidos.includes(message.author.id)) {
-        return true;
-    }
-
-    return Cargos_Permitidos.some(
-        cargoId => message.member.roles.cache.has(cargoId)
+    return message.member.roles.cache.some(
+        role => CARGOS_PERMITIDOS.includes(role.id)
     );
+
+}
+
+export function isPotato(message) {
+
+    return message.author.id === ID_POTATO;
+
 }
