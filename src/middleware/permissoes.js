@@ -6,9 +6,7 @@ const CARGOS_PERMITIDOS = [
     process.env.CARGO_SUP
 ];
 
-const ID_POTATO = process.env.BATATA_CREATE;
-
-export function temPermissao(message) {
+export function Permissao_Verificar(message) {
 
     return message.member.roles.cache.some(
         role => CARGOS_PERMITIDOS.includes(role.id)
@@ -16,8 +14,8 @@ export function temPermissao(message) {
 
 }
 
-export function isPotato(message) {
+export function Potato_Verificar(message) {
 
-    return message.author.id === ID_POTATO;
+    return message.author.id === process.env.BATATA_CREATE;
 
 }

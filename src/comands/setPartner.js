@@ -1,4 +1,4 @@
-import { temPermissao } from "./permissoes.js";
+import { Permissao_Verificar } from "../middleware/permissoes.js";
 
 const ID_CARGO_PARTNER = "1544851524042367066";
 
@@ -7,7 +7,7 @@ export default {
 
     async execute(message) {
 
-        if (!temPermissao(message)) {
+        if (!Permissao_Verificar(message)) {
             return message.reply(
                 "Você não tem permissão pra isso."
             );
