@@ -14,7 +14,7 @@ export function ativar(client) {
 
     intervalo = setInterval(() => {
 
-        const canal = client.channels.cache.get("1470658658244493447");
+        const canal = client.channels.cache.get("1537093541820637234");
 
         if (!canal) return;
 
@@ -23,7 +23,7 @@ export function ativar(client) {
 
         canal.send(anuncio);
 
-    }, 5000);
+    }, 10000);
 
     return "📢 Anúncios ativados!";
 }
