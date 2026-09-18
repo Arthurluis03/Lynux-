@@ -6,7 +6,7 @@ const caminhoDados = path.resolve("src/data/messageData.json");
 const ID_ADM = "775443621427019806";
 
 export default {
-    name: "msgremover",
+    name: " msgremover ",
 
     execute(message) {
 

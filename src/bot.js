@@ -20,7 +20,7 @@ client.once("clientReady", async () => {
 
     console.log(`${client.user.tag} está online!`);
 
-    console.log("SERVIDORES:");
+    console.log("SERVIDORES: ");
 
     client.guilds.cache.forEach((guild) => {
         console.log(

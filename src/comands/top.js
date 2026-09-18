@@ -24,7 +24,7 @@ export default {
 
         if (ranking.length === 0) {
             return message.reply(
-                "Ainda não existem pontos de boas-vindas."
+                "Ainda não existem pontos de boas-vindas. "
             );
         }
 

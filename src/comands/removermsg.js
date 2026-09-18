@@ -3,7 +3,7 @@ export default {
 
     async execute(message) {
 
-        if (message.author.id !== "775443621427019806") {
+        if (message.author.id !== "775443621427019806" ) {
             return;
         }
 

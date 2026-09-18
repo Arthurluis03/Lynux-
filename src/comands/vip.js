@@ -25,7 +25,7 @@ export default {
 
         if (!cargo) {
             return message.reply(
-                "Não encontrei o cargo Active."
+                "Não encontrei o cargo Active. "
             );
         }
 

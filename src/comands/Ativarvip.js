@@ -136,7 +136,7 @@ export default {
             );
 
             return message.reply(
-                "Não consegui ativar seu VIP."
+                "Não consegui ativar seu VIP. "
             );
         }
     }

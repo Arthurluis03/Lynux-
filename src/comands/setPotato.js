@@ -15,7 +15,7 @@ export default {
 
         if (!ID_CARGO) {
             return message.reply(
-                "Você precisa informar o ID do cargo."
+                "Você precisa informar o ID do cargo. "
             );
         }
 

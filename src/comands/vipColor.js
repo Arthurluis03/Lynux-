@@ -39,7 +39,7 @@ export default {
 
         if (!Cargo) {
             return message.reply(
-                "O cargo do seu VIP não foi encontrado."
+                "O cargo do seu VIP não foi encontrado. " 
             );
         }
 

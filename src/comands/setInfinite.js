@@ -44,7 +44,7 @@ export default {
             console.error(error);
 
             return message.reply(
-                "Não consegui adicionar o cargo Infinite."
+                "Não consegui adicionar o cargo Infinite. "
             );
         }
     }

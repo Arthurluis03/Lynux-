@@ -156,7 +156,7 @@ export default (client) => {
       setInfinite.execute(message);
     }
 
-    if (message.content.startsWith("!setRoyal ")) {
+    if (message.content.startsWith("!setRoyal")) {
       setRoyal.execute(message);
     }
 

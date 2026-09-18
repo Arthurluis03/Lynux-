@@ -4,7 +4,7 @@ import "./bot.js";
 const app = express()
 
 app.get("/", (req, res)=>{
-    res.send('Lynux Funcionando!')
+    res.send('Lynux Funcionando! ')
 })
 
 app.listen(3000, ()=>{ 

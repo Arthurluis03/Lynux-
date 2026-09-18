@@ -45,7 +45,7 @@ export default {
 
         if (!Nome) {
             return message.reply(
-                "Use: !vipCall Nome"
+                "Use: !vipCall Nome "
             );
         }
 

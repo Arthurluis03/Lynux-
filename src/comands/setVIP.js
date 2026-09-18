@@ -83,7 +83,7 @@ export default {
             );
 
             return message.reply(
-                `${Usuario} agora possui acesso à sua call VIP.`
+                `${Usuario} agora possui acesso à sua call VIP. `
             );
 
         } catch (error) {

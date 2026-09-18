@@ -24,7 +24,7 @@ export default {
 
         if (ranking.length === 0) {
             return message.reply(
-                "Ainda não existem mensagens registradas."
+                "Ainda não existem mensagens registradas. "
             );
         }
 

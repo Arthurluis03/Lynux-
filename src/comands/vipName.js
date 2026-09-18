@@ -62,7 +62,7 @@ export default {
             console.error(error);
 
             return message.reply(
-                "Não consegui alterar o nome do seu VIP."
+                "Não consegui alterar o nome do seu VIP. "
             );
         }
     }

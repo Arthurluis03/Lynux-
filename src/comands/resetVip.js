@@ -18,7 +18,7 @@ const ID_CARGO_ACTIVE = process.env.ACTIVE;
 
 export default {
 
-    name: "resetvip",
+    name: "resetvip ",
 
     async execute(message) {
 

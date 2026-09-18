@@ -7,7 +7,7 @@ export default {
  # Lynux — Comandos VIP
 
 !vipAtivar
-Ativa seu VIP e cria seu cargo exclusivo de call.
+Ativa seu VIP e cria seu cargo exclusivo de call. 
 
 !vip @usuario
 Adiciona o cargo VIP ao usuário mencionado.
